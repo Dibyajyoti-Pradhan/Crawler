@@ -1,0 +1,26 @@
+-------------------------------------------------------------------------------
+Test set: com.dibyojyoti.demo.PageCrawlerTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 1.27 s <<< FAILURE! - in com.dibyojyoti.demo.PageCrawlerTest
+testRun  Time elapsed: 1.255 s  <<< ERROR!
+org.mockito.exceptions.misusing.WrongTypeOfReturnValue: 
+
+Document cannot be returned by connect()
+connect() should return Connection
+***
+If you're unsure why you're getting above error read on.
+Due to the nature of the syntax above problem might occur because:
+1. This exception *might* occur in wrongly written multi-threaded tests.
+   Please refer to Mockito FAQ on limitations of concurrency testing.
+2. A spy is stubbed using when(spy.foo()).then() syntax. It is safer to stub spies - 
+   - with doReturn|Throw() family of methods. More in javadocs for Mockito.spy() method.
+
+	at com.dibyojyoti.demo.PageCrawlerTest.testRun(PageCrawlerTest.java:49)
+
+testRunWithIOException  Time elapsed: 0.008 s  <<< ERROR!
+org.mockito.exceptions.base.MockitoException: 
+
+Checked exception is invalid for this method!
+Invalid: java.io.IOException: Failed to connect
+	at com.dibyojyoti.demo.PageCrawlerTest.testRunWithIOException(PageCrawlerTest.java:64)
+
