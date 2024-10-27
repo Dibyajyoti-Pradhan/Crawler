@@ -88,13 +88,13 @@ To set up and run the project, follow these steps:
 
    Replace "https://monzo.com" with any other arguments as needed.
 
-   Example: ![Alt text](../Screenshot%20Run.png?raw=true "Screenshot for running")
+   Example: ![Alt text](/Screenshot%20Run.png?raw=true "Screenshot for running")
 
 7. **Run test**
    ```bash
    mvn test
    ```
-   Example: ![Alt text](../Screenshot%20Unit%20Tests.png?raw=true "Screenshot for unit test")
+   Example: ![Alt text](/Screenshot%20Unit%20Tests.png?raw=true "Screenshot for unit test")
 
 Tools used:
 
